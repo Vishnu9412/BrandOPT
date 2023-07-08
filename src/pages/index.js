@@ -12,7 +12,7 @@ export default function Home() {
     <main>
       <Head>
         <title>BrandOPT - Your Brand, Made Visible</title>
-        <meta property="og:title" content="My page title" key="title" />
+        <meta property="og:title" content="BrandOPT - Your Brand, Made Visible" key="title" />
       </Head>
       <Navbar/>
       <Header/>

@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+body{
+  background-color: #000;
+  color: #fff;
+  main{
+    overflow: hidden;
+  }
+}
+
+img{
+  height: auto;
+  width: auto;
+}
+
+.primary-btn{
+  @apply bg-[#007ECA] ps-[4.5em] pe-[5em] pb-4 pt-2 text-xs rounded-lg relative transition-all;
+  &::before{
+    content: '';
+    height: 100%;
+    width: 100%;
+    @apply border-2 absolute top-[-3px] left-[-3px] rounded-lg transition-all;
+  }
+  &:hover{
+    @apply pb-3 pt-3;
+  }
+  &:hover::before{
+    @apply top-0 left-0;
+  }
+}
+
+.hover-style{
+  position: relative;
+  &::before{
+    content: '';
+    height: 100%;
+    width: 100%;
+    @apply border-2 absolute top-[-10px] left-[-10px] rounded-xl transition-all;
+  }
+  &:hover::before{
+    @apply top-0 left-0;
+  }
+}
+
+.hover-style-reverse{
+  position: relative;
+  &::before{
+    content: '';
+    height: 100%;
+    width: 100%;
+    @apply border-2 absolute top-0 left-0 rounded-xl transition-all;
+  }
+  &:hover::before{
+    @apply top-[-10px] left-[-10px];
+  }
+}
+
+
+@media (min-width:1024px) {
+  .navbar{
+    ul{
+      display: flex!important;
+    }
+  }
+}
+@media (min-width:0px) {
+  .navbar{
+    ul{
+      display: none;
+    }
+  }
+}
+
+
+

@@ -15,7 +15,7 @@ Brandopt is a website built with Next.js that aims to help companies establish t
 ## Installation
 
 1. Clone the repository:
-```git clone https://github.com/your-username/brandopt.git```
+```git clone https://github.com/Vishnu9412/BrandOPT.git```
 
 2. Install the dependencies:
 ```npm install```

@@ -22,7 +22,7 @@ Brandopt is a website built with Next.js that aims to help companies establish t
 
 ## Usage
 
-1. Start the development server:
+1. Start the development server: ```npm run dev```
 2. Open your web browser and visit `http://localhost:3000` to access the Brandopt website.
 
 ## Technologies Used

@@ -28,6 +28,4 @@ Brandopt is a website built with Next.js that aims to help companies establish t
 ## Technologies Used
 
 - Next.js: A React framework for building server-side rendered and statically generated web applications.
-- React: A JavaScript library for building user interfaces.
-- CSS: Styling the components and layout of the website.
-- [Add other technologies used in your project]
+- SCSS: Styling the components and layout of the website.

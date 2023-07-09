@@ -9,9 +9,9 @@ export const PricingSelector = () => {
   }
   return (
     <div>
-      <ul className="flex border-2 w-fit sm:mx-0 py-1 rounded-xl relative pricing-selector">
+      <ul className="flex border-2 sm:w-fit w-[95vw] justify-between sm:mx-0 py-1 rounded-xl relative pricing-selector">
         <li
-          className="px-10 py-3 mx-1 cursor-pointer rounded-lg z-10"
+          className="px-10 py-3 mx-1 cursor-pointer rounded-lg z-10 text-center"
           style={{ userSelect: "none" }}
           onClick={() => {
             setPricing("left-0", "Logo Designing");
@@ -20,10 +20,10 @@ export const PricingSelector = () => {
           Logo&nbsp;Designing
         </li>
         <li
-          className="px-10 py-3 mx-1 cursor-pointer rounded-lg z-10"
+          className="px-10 py-3 mx-1 cursor-pointer rounded-lg z-10 text-center"
           style={{ userSelect: "none" }}
           onClick={() => {
-            setPricing("left-[197px]", "Banner Designing");
+            setPricing("left-[50%]", "Banner Designing");
           }}
         >
           Banner&nbsp;Designing

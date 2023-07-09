@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import FaqBubble from "./FaqBubble";
 import { motion } from "framer-motion";
 import $ from 'jquery'
-import useWindowSize from "@/utils/useWindowSize";
+// import useWindowSize from "@/utils/useWindowSize";
 
 const FaqSection = () => {
   // const { width } = useWindowSize();

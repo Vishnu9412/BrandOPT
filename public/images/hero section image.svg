@@ -1,13 +1,13 @@
 <svg width="722" height="578" viewBox="0 0 722 578" fill="none" xmlns="http://www.w3.org/2000/svg">
 <rect x="1.25565" y="1.25565" width="719.489" height="424.41" rx="11.3009" fill="white"/>
 <mask id="path-2-inside-1_274_295" fill="white">
-<path d="M0 0H722V30.1357H0V0Z"/>
+<path d="M0 14C0 6.268 6.26801 0 14 0H708C715.732 0 722 6.26801 722 14V30.1357H0V14Z"/>
 </mask>
-<path d="M0 0H722V30.1357H0V0Z" fill="#E8E8E8"/>
+<path d="M0 14C0 6.268 6.26801 0 14 0H708C715.732 0 722 6.26801 722 14V30.1357H0V14Z" fill="#E8E8E8"/>
 <circle cx="25.7409" cy="14.44" r="6.90609" fill="black"/>
 <circle cx="45.8313" cy="14.44" r="6.90609" fill="black"/>
 <circle cx="65.9217" cy="14.44" r="6.90609" fill="black"/>
-<path d="M722 27.6243H0V32.647H722V27.6243Z" fill="black" mask="url(#path-2-inside-1_274_295)"/>
+<path d="M0 0H722H0ZM722 32.647H0V27.6243H722V32.647ZM0 30.1357V0V30.1357ZM722 0V30.1357V0Z" fill="black" mask="url(#path-2-inside-1_274_295)"/>
 <rect x="421.899" y="79.1061" width="258.664" height="48.9704" rx="24.4852" fill="black"/>
 <rect x="421.899" y="79.1061" width="258.664" height="48.9704" rx="24.4852" stroke="black" stroke-width="2.5113"/>
 <rect x="420.643" y="76.5948" width="258.664" height="48.9704" rx="24.4852" fill="white"/>

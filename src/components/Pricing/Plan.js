@@ -6,7 +6,7 @@ const Plan = (props) => {
   return (
     <div className="m-6 relative">
       <div
-        className={`plan hover-style ${props.border} cursor-pointer flex flex-col items-center max-w-[310px] w-[310px] p-7 ${props.BG} ${props.textColor} rounded-xl`}
+        className={`plan transition-all hover-style ${props.class} cursor-pointer flex flex-col items-center max-w-[310px] w-[310px] p-7 ${props.BG} ${props.textColor} rounded-xl`}
       >
         <h3 className="text-center text-3xl">{props.title}</h3>
         <p className="flex justify-between text-lg w-[100%]">

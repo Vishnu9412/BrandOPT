@@ -7,25 +7,25 @@ import Plan from "./Plan";
 
 
 const Pricing = () => {
-  function getNestedDivs(count) {
-    if (count <= 0) {
-      return null;
-    }
+  // function getNestedDivs(count) {
+  //   if (count <= 0) {
+  //     return null;
+  //   }
   
-    return (
-      <div id={`p-${count}`} className="div" key={count}>
-        {getNestedDivs(count - 1)}
-      </div>
-    );
-  }
+  //   return (
+  //     <div id={`p-${count}`} className="div" key={count}>
+  //       {getNestedDivs(count - 1)}
+  //     </div>
+  //   );
+  // }
   
-  function getGrid() {
-    return (
-      <div id="p-10" className="grid-div" key={10}>
-        {getNestedDivs(10)}
-      </div>
-    );
-  }
+  // function getGrid() {
+  //   return (
+  //     <div id="p-10" className="grid-div" key={10}>
+  //       {getNestedDivs(10)}
+  //     </div>
+  //   );
+  // }
   
 
   return (
@@ -48,6 +48,7 @@ const Pricing = () => {
             previousPrice="60.00"
             discount="50"
             slots="10"
+            class="shadow-[8px_8px_0px_black,10px_10px_0px_#fff] hover:shadow-none relative hover:top-1 hover:left-1 "
             features={[
               "2 Concept Art",
               "2 Revisions",
@@ -56,14 +57,34 @@ const Pricing = () => {
             ]}
           />
           <Plan
-            BG="bg-[#007ECA]"
+            BG="bg-[#000]"
             border="before:border-[#fff]"
             textColor="text-[#fff]"
-            title="PLATINUM"
+            title="PLATINUM"  
             previousPrice="160.00"
             discount="50"
             slots="9"
             mostSelling="true"
+            class="border-2 border-white shadow-[8px_8px_0px_white] hover:shadow-none relative hover:top-1 hover:left-1"
+            features={[
+              "Logo transparency",
+              "Vector file",
+              "Printable file",
+              "Include 3D mockup",
+              "Include source file",
+              "4 Concept Art",
+              "4 Revisions",
+            ]}
+          />
+          <Plan
+            BG="bg-[#fff]"
+            border="before:border-[#fff]"
+            textColor="text-[#000]"
+            title="PLATINUM"  
+            previousPrice="160.00"
+            discount="50"
+            slots="9"
+            class="shadow-[8px_8px_0px_black,10px_10px_0px_#fff] hover:shadow-none relative hover:top-1 hover:left-1"
             features={[
               "Logo transparency",
               "Vector file",
@@ -76,7 +97,7 @@ const Pricing = () => {
           />
         </div>
       </div>
-      <div className="group z-[-10]">{getGrid()}</div>
+      {/* <div className="group z-[-10]">{getGrid()}</div> */}
       <TextSlider rotate="rotate-[-1deg]" position="bottom-[20px] left-0" />
     </div>
   );

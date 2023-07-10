@@ -22,8 +22,11 @@ const Navbar = () => {
   useEffect(() => {
     if(clientWindowHeight > 10){
       $('.nav-divider').css({width:"200vw",left:"calc(-70vw - 86px)"})
+      $('.navbar').addClass('bg-black').removeClass('bg-transparent');
     }else{
       $('.nav-divider').css({width:"86px",left:"-14px"})
+      $('.navbar').addClass('bg-transparent').removeClass('bg-black');
+
     }
   }, [clientWindowHeight]);
 
@@ -32,7 +35,7 @@ const Navbar = () => {
   return (
     variables.primaryColor && (
       <div
-        className={`navbar ${work_Sans.className} transition-all py-[20px] flex justify-between items-center top-0 left-0 fixed w-[100vw] xl:px-[10em] px-[3em] bg-black  z-30 shadow-lg`}
+        className={`navbar ${work_Sans.className} transition-all py-[20px] flex justify-between items-center top-0 left-0 fixed w-[100vw] xl:px-[10em] px-[3em] bg-transparent  z-30 shadow-lg`}
       >
         <ul className="w-[7em]  text-md font-bold">
           <li className="me-5">

@@ -4,76 +4,127 @@
 
 
 
-body{
+body {
   background-color: #000;
   color: #fff;
-  main{
+
+  main {
     overflow: hidden;
   }
 }
 
-img{
+img {
   height: auto;
   width: auto;
 }
 
-.primary-btn{
+.primary-btn {
   @apply bg-[#007ECA] ps-[4.5em] pe-[5em] pb-4 pt-2 text-xs rounded-lg relative transition-all;
-  &::before{
+
+  &::before {
     content: '';
     height: 100%;
     width: 100%;
     @apply border-2 absolute top-[-3px] left-[-3px] rounded-lg transition-all;
   }
-  &:hover{
+
+  &:hover {
     @apply pb-3 pt-3;
   }
-  &:hover::before{
+
+  &:hover::before {
     @apply top-0 left-0;
   }
 }
 
-.hover-style{
-  position: relative;
-  &::before{
-    content: '';
-    height: 100%;
-    width: 100%;
-    @apply border-2 absolute top-[-10px] left-[-10px] rounded-xl transition-all;
+// .hover-style {
+//   position: relative;
+
+//   &::before {
+//     content: '';
+//     height: 100%;
+//     width: 100%;
+//     @apply border-2 absolute top-[-10px] left-[-10px] rounded-xl transition-all;
+//   }
+
+//   &:hover::before {
+//     @apply top-0 left-0;
+//   }
+// }
+
+
+// .hover-style {
+//   box-shadow:0px 0px 0px 0px rgb(255, 255, 255);
+//   transition: all;
+//   &:hover {
+//     transition: all;
+//     box-shadow:10px 10px 0px 0px rgb(255, 255, 255);
+//   }
+// }
+
+
+// .hover-style-reverse {
+//   position: relative;
+
+//   &::before {
+//     content: '';
+//     height: 100%;
+//     width: 100%;
+//     @apply border-2 absolute top-0 left-0 rounded-xl transition-all;
+//   }
+
+//   &:hover::before {
+//     @apply top-[-10px] left-[-10px];
+//   }
+// }
+
+.header {
+  background: url("/images/pricing\ section\ grid\ background.svg");
+  background-position: center;
+  background-size: cover;
+
+  @mixin reverse-loop($i) {
+    @if $i>0 {
+      [id="p-#{$i}"] {
+        // Styles for the selected element
+        border: 2px solid rgba(87, 87, 87, 0.30);
+        height: 100%;
+        width: 100%;
+        padding: 5em 6.7em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: zoomIn 10s linear infinite;
+      }
+
+      @include reverse-loop($i - 1); // Recursive call
+    }
   }
-  &:hover::before{
-    @apply top-0 left-0;
+
+  .group {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -10;
+
+    @include reverse-loop(20);
   }
 }
-
-.hover-style-reverse{
-  position: relative;
-  &::before{
-    content: '';
-    height: 100%;
-    width: 100%;
-    @apply border-2 absolute top-0 left-0 rounded-xl transition-all;
-  }
-  &:hover::before{
-    @apply top-[-10px] left-[-10px];
-  }
-}
-
 
 @media (min-width:1024px) {
-  .navbar{
-    ul{
-      display: flex!important;
+  .navbar {
+    ul {
+      display: flex !important;
     }
   }
 }
+
 @media (min-width:0px) {
-  .navbar{
-    ul{
+  .navbar {
+    ul {
       display: none;
     }
   }
 }
-
-
-

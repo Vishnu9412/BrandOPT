@@ -20,7 +20,7 @@ const Testimonial = (props) => {
     return ratings;
   }
   return (
-    <div className="xl:max-w-[26em] lg:max-w-[20em] lg:mx-[5em] mx-[2em] my-5 bg-white text-black flex flex-col justify-center hover:text-white transition-all hover:bg-[#007ECA] px-6 h-[14em] rounded-xl hover-style-reverse cursor-pointer">
+    <div className="xl:max-w-[26em] lg:max-w-[20em] lg:mx-[5em] mx-[2em] my-5 bg-white text-black flex flex-col justify-center hover:text-white transition-all hover:bg-[transparent] hover:border hover:border-white px-6 h-[14em] rounded-xl hover-style-reverse cursor-pointer">
       <h1 className="font-bold text-xl mb-2">VISHNU GOSWAMI</h1>
       <div className="stars flex mb-5">{getRatings()}</div>
       <p className="text-lg">

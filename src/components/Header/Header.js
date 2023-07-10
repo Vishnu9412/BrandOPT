@@ -3,9 +3,29 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 const Header = () => {
+  function getNestedDivs(count) {
+    if (count <= 0) {
+      return null;
+    }
+  
+    return (
+      <div id={`p-${count}`} className="div" key={count}>
+        {getNestedDivs(count - 1)}
+      </div>
+    );
+  }
+  
+  function getGrid() {
+    return (
+      <div id="p-5" className="grid-div" key={10}>
+        {getNestedDivs(5)}
+      </div>
+    );
+  }
+  
   return (
     <div
-      className={`flex xl:justify-between lg:justify-start justify-center flex-wrap xl:flex-nowrap h-[100vh] xl:mt-0 lg:mt-[15em] sm:mt-[5em] items-center content-center xl:px-[10em] lg:px-[5em] px-[3em] xl:mb-0 lg:mb-5 mb-0`}
+      className={`flex xl:justify-between header lg:justify-start justify-center flex-wrap xl:flex-nowrap h-[100vh] xl:mt-0 lg:mt-[15em] sm:mt-[5em] items-center content-center xl:px-[10em] lg:px-[5em] px-[3em] xl:mb-0 lg:mb-5 mb-0`}
     >
       <div className="2xl:max-w-xl max-w-lg flex flex-col justify-center items-start lg:mb-0 mb-[5em]">
         <motion.div
@@ -21,7 +41,7 @@ const Header = () => {
         </motion.div>
         <h1 className="font-bold 2xl:text-5xl 2xl:mb-10 sm:text-4xl text-2xl mb-5">
           Introducing{" "}
-          <span className="text-black relative font-extrabold px-1 before:w-[100%] before:h-[100%] before:z-[-1] before:bg-white before:absolute before:top-0 before:left-0 hover:before:w-0 hover:text-white before:transition-all transition-all cursor-pointer">
+          <span className="text-black before:rounded-md relative font-extrabold px-1 before:w-[100%] before:h-[100%] before:z-[-1] z-10 before:bg-white before:absolute before:bottom-0 before:left-0 hover:before:w-0 hover:text-white before:transition-all transition-all cursor-pointer">
             BrandOPT
           </span>
         </h1>
@@ -31,7 +51,7 @@ const Header = () => {
           visually appealing branding materials. Contact us for standout
           branding that captivates your target audience.
         </p>
-        <a className="primary-btn 2xl:text-lg" href="#">
+        <a className="shadow-[3px_3px_0px_#fff] border-2 hover:shadow-none hover:top-[1px] hover:left-[1px] bg-[#000] ps-[4.5em] pe-[5em] pb-4 pt-2 text-xs rounded-lg relative transition-all 2xl:text-lg" href="#">
           Join Discord
         </a>
       </div>
@@ -64,6 +84,8 @@ const Header = () => {
           <circle cx="81" cy="35" r="26" fill="#007ECA" />
         </svg>
       </div> */}
+     <div className="group z-[-10]">{getGrid()}</div>
+
     </div>
   );
 };

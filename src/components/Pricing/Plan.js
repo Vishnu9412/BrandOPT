@@ -64,7 +64,7 @@ const Plan = (props) => {
         {props.mostSelling && (
           <Image
             src="/images/most selling.png"
-            className="absolute lg:left-[-250px] left-0 lg:bottom-0 bottom-[-100px] cursor-default"
+            className="absolute lg:left-[-250px] bottom-0 lg:opacity-1 opacity-0  cursor-default"
             height={200}
             width={200}
             style={{height:"80px!important", width:"auto!important"}}

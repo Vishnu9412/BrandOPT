@@ -34,7 +34,7 @@ const Pricing = () => {
       <div className="flex flex-col items-center justify-center">
         <h1 className="font-bold 2xl:text-5xl 2xl:mb-10 sm:text-4xl text-4xl mb-5">
           Our{" "}
-          <span className="text-black relative font-extrabold px-1 before:w-[100%] z-10 before:h-[100%] before:z-[-1] before:bg-white before:absolute before:top-0 before:left-0 hover:before:w-0 hover:text-white before:transition-all transition-all cursor-pointer">
+          <span className="text-black relative font-extrabold px-1 before:w-[100%] z-10 before:h-[100%] before:z-[-1] before:bg-white before:absolute before:bottom-0 before:rounded before:left-0 hover:before:w-0 hover:text-white before:transition-all transition-all cursor-pointer">
             Pricing
           </span>
         </h1>

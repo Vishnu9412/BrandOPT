@@ -41,7 +41,7 @@ const Header = () => {
         </motion.div>
         <h1 className="font-bold 2xl:text-5xl 2xl:mb-10 sm:text-4xl text-2xl mb-5">
           Introducing{" "}
-          <span className="text-black before:rounded-md relative font-extrabold px-1 before:w-[100%] before:h-[100%] before:z-[-1] z-10 before:bg-white before:absolute before:bottom-0 before:left-0 hover:before:w-0 hover:text-white before:transition-all transition-all cursor-pointer">
+          <span className="text-black before:rounded relative font-extrabold px-1 before:w-[100%] before:h-[100%] before:z-[-1] z-10 before:bg-white before:absolute before:bottom-0 before:left-0 hover:before:w-0 hover:text-white before:transition-all transition-all cursor-pointer">
             BrandOPT
           </span>
         </h1>
@@ -51,7 +51,7 @@ const Header = () => {
           visually appealing branding materials. Contact us for standout
           branding that captivates your target audience.
         </p>
-        <a className="shadow-[3px_3px_0px_#fff] border-2 hover:shadow-none hover:top-[1px] hover:left-[1px] bg-[#000] ps-[4.5em] pe-[5em] pb-4 pt-2 text-xs rounded-lg relative transition-all 2xl:text-lg" href="#">
+        <a className="shadow-[3px_3px_0px_#fff] border-2 hover:shadow-none hover:top-[1px] hover:left-[1px] bg-[#000] px-[5em] py-[1em] text-xs rounded-lg relative transition-all 2xl:text-lg" href="#">
           Join Discord
         </a>
       </div>

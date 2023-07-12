@@ -38,7 +38,7 @@ const Pricing = () => {
             Pricing
           </span>
         </h1>
-        <PricingSelector />
+        {/* <PricingSelector /> */}
         <div className={`plans ${verala.className} flex flex-wrap justify-center mt-7`}>
           <Plan
             BG="bg-[#fff]"

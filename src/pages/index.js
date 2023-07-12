@@ -3,24 +3,46 @@ import Header from "@/components/Header/Header";
 import Pricing from "@/components/Pricing/PricingSection";
 import TestimonialSection from "@/components/Testimonials/TestimonialSection";
 import FaqSection from "@/components/FAQ/FaqSection";
-import Head from 'next/head'
+import Head from "next/head";
 import FooterSection from "@/components/Footer/FooterSection";
 import FAQAccordion from "@/components/FAQAccordion/FAQAccordion";
+import { useState } from "react";
 
 export default function Home() {
-  return(
+  const [openNote, setOpenNote] = useState(true);
+  function handleNoteClick() {
+    setOpenNote(false)
+  }
+  return (
     <main>
       <Head>
         <title>BrandOPT - Your Brand, Made Visible</title>
-        <meta property="og:title" content="BrandOPT - Your Brand, Made Visible" key="title" />
+        <meta
+          property="og:title"
+          content="BrandOPT - Your Brand, Made Visible"
+          key="title"
+        />
       </Head>
-      <Navbar/>
-      <Header/>
-      <Pricing/>
-      <TestimonialSection/>
+      {openNote && (
+        <div className="fixed z-20 bottom-0 flex justify-between text-blue-200 shadow-inner rounded p-3 bg-blue-600">
+          <p className="self-center">
+            <strong>Note: </strong> It is not functional Website. Just a prototype.
+          </p>
+          <strong
+            className="text-xl align-center cursor-pointer alert-del mx-5"
+            onClick={handleNoteClick}
+          >
+            &times;
+          </strong>
+        </div>
+      )}
+      <Navbar />
+      <Header />
+      <Pricing />
+      <TestimonialSection />
       {/* <FaqSection/> */}
-      <FAQAccordion/>
-      <FooterSection/>
+      <FAQAccordion />
+      <FooterSection />
     </main>
-  )
+  );
 }

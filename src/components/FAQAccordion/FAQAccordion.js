@@ -23,35 +23,43 @@ export default function Example() {
         <Fragment>
           <Accordion className="accordion mt-12" open={open === 1}>
             <AccordionHeader onClick={() => handleOpen(1)}>
-              What is Material Tailwind?
+              How can you contact ME ?
             </AccordionHeader>
             <AccordionBody className="body">
-              We&apos;re not always in the position that we want to be at.
-              We&apos;re constantly growing. We&apos;re constantly making
-              mistakes. We&apos;re constantly trying to express ourselves and
-              actualize our dreams.
+              Customers can easily contact me by sending a direct message (DM)
+              on{" "}
+              <a
+                href="https://twitter.com/CodeVishnu"
+                className="font-bold text-blue-400"
+              >
+                Twitter
+              </a>{" "}
+              or by emailing me at vishnugoswami6000@gmail.com
             </AccordionBody>
           </Accordion>
           <Accordion className="accordion" open={open === 2}>
             <AccordionHeader onClick={() => handleOpen(2)}>
-              How to use Material Tailwind?
+              How long does it take to build a website?
             </AccordionHeader>
             <AccordionBody className="body">
-              We&apos;re not always in the position that we want to be at.
-              We&apos;re constantly growing. We&apos;re constantly making
-              mistakes. We&apos;re constantly trying to express ourselves and
-              actualize our dreams.
+              The timeline for building a website depends on various factors
+              such as the complexity of the project, design requirements, and
+              functionality needed. After discussing your specific needs, I will
+              provide you with a project timeline to give you an estimate of the
+              development duration.
             </AccordionBody>
           </Accordion>
           <Accordion className="accordion" open={open === 3}>
             <AccordionHeader onClick={() => handleOpen(3)}>
-              What can I do with Material Tailwind?
+              Can you provide ongoing website maintenance and support?
             </AccordionHeader>
             <AccordionBody className="body">
-              We&apos;re not always in the position that we want to be at.
-              We&apos;re constantly growing. We&apos;re constantly making
-              mistakes. We&apos;re constantly trying to express ourselves and
-              actualize our dreams.
+              Absolutely! I offer comprehensive website maintenance and support
+              services to ensure your website remains secure, up-to-date, and
+              functioning optimally. From regular updates to security monitoring
+              and troubleshooting, I provide ongoing assistance to help you
+              focus on your core business while keeping your website in top
+              shape.
             </AccordionBody>
           </Accordion>
         </Fragment>

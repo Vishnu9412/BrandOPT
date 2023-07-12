@@ -19,14 +19,14 @@ const FooterSection = () => {
       <div className="social-media flex justify-between w-[20em] my-10">
         <div>
           <h1 className="font-extrabold text-xl ">FOLLOW US</h1>
-          <div className="flex justify-around">
-            <div>I</div>
-            <div>T</div>
-          </div>
+          {/* <div className="flex justify-around">
+            <div>Ista</div>
+            <div>Twitter</div>
+          </div> */}
         </div>
         <div className="flex flex-col items-center">
           <h1 className="font-extrabold text-xl ">CONTACT US</h1>
-          <div>EMAIL</div>
+          {/* <div>Email</div> */}
         </div>
       </div>
     </div>

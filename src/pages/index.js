@@ -16,10 +16,10 @@ export default function Home() {
   return (
     <main>
       <Head>
-        <title>BrandOPT - Your Brand, Made Visible</title>
+        <title>LG -design</title>
         <meta
           property="og:title"
-          content="BrandOPT - Your Brand, Made Visible"
+          content="LG -design"
           key="title"
         />
       </Head>

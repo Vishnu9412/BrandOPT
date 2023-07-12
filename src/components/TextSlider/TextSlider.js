@@ -18,7 +18,7 @@ const TextSlider = ({rotate,position}) => {
                   width={25}
                   className="mx-3"
                 />
-                Brand&nbsp;OPT
+                LG&nbsp;Design
               </h1>
             );
           })}
